@@ -1,7 +1,9 @@
 ---
 _schema: default
 title: Why
-description: Learn why this Astro component starter was built and how it helps teams create fast, flexible static sites.
+description: >-
+  Learn why this Astro component starter was built and how it helps teams create
+  fast, flexible static sites.
 pageSections:
   - _component: page-sections/heroes/hero-split
     eyebrow:
@@ -16,9 +18,9 @@ pageSections:
       sites with CloudCannon, we wanted to help out by providing the foundations
       for Astro components that output static HTML and CSS, for the fastest
       delivery possible —&nbsp;all unbranded and adaptable for any project.
-    imageSource: /src/assets/images/component-docs/sunset.jpg
+    imageSource: /src/assets/images/cubes.svg
     imageAlt: Sunset
-    imageAspectRatio: portrait
+    imageAspectRatio: none
     buttonSections: []
     reverse: true
     colorScheme: inherit
@@ -26,10 +28,6 @@ pageSections:
     paddingVertical: 4xl
   - _component: page-sections/info-blocks/faq-section
     heading: Frequently asked questions
-    headingLevel: h2
-    headingSize: lg
-    singleOpen: true
-    openFirst: false
     items:
       - title: How does the Component Starter work?
         contentSections:
@@ -38,6 +36,7 @@ pageSections:
               We give you [straightforward building blocks](/component-docs/)
               without hiding anything behind layers of abstraction. You see
               everything that's happening, and stay in control.
+            alignX: start
       - title: What's included in the Component Starter?
         contentSections:
           - _component: building-blocks/core-elements/text
@@ -45,6 +44,7 @@ pageSections:
               Lean HTML, CSS, and small touches of vanilla JavaScript. No dead
               weight, no surprise dependencies, just the pieces you actually
               need to build great pages.
+            alignX: start
       - title: How is the Component Starter so fast?
         contentSections:
           - _component: building-blocks/core-elements/text
@@ -52,6 +52,7 @@ pageSections:
               Performance comes from keeping things lightweight. The framework
               handles image optimization and responsive patterns so your site
               stays quick without extra work.
+            alignX: start
       - title: Can I customize the Component Starter?
         contentSections:
           - _component: building-blocks/core-elements/text
@@ -60,11 +61,16 @@ pageSections:
               and edited. You shape it to fit your project instead of working
               around someone else's opinions. Start by [browsing the
               components](/component-docs/) to see how they're set up!
-    maxContentWidth: xl
-    paddingHorizontal: xl
+            alignX: start
     paddingVertical: 4xl
     colorScheme: inherit
     backgroundColor: none
+    headingLevel: h2
+    headingSize: lg
+    singleOpen: true
+    openFirst: false
+    maxContentWidth: xl
+    paddingHorizontal: xl
   - _component: page-sections/builders/custom-section
     label: ''
     contentSections:
@@ -93,9 +99,11 @@ pageSections:
       positionVertical: top
       positionHorizontal: center
     rounded: false
+    useDefaultEditableBinding: true
   - _component: page-sections/features/feature-slider
     slides:
-      - eyebrow: First slide demonstration
+      - _component: page-sections/features/feature-slider/feature-slider-item
+        eyebrow: First slide demonstration
         title: Welcome to the carousel component
         description: >-
           This initial slide introduces visitors to the rotating content
@@ -106,7 +114,8 @@ pageSections:
         imageSource: /src/assets/images/component-docs/quiet-street.jpg
         imageAlt: High Performance
         minSplitWidth: 0
-      - eyebrow: Content transition example
+      - _component: page-sections/features/feature-slider/feature-slider-item
+        eyebrow: Content transition example
         title: Seamless navigation between slides
         description: >-
           As you move to the second position, observe how the previous content
@@ -117,7 +126,8 @@ pageSections:
         imageSource: /src/assets/images/component-docs/sheep.jpg
         imageAlt: Easy Maintenance
         minSplitWidth: 0
-      - eyebrow: Third position showcase
+      - _component: page-sections/features/feature-slider/feature-slider-item
+        eyebrow: Third position showcase
         title: Maintaining consistent formatting
         description: >-
           By the third slide, the pattern becomes clear. Each rotation maintains
@@ -127,7 +137,8 @@ pageSections:
         imageSource: /src/assets/images/component-docs/castle.jpg
         imageAlt: Move Faster
         minSplitWidth: 300
-      - eyebrow: Final slide
+      - _component: page-sections/features/feature-slider/feature-slider-item
+        eyebrow: Final slide
         title: Completing the carousel loop
         description: >-
           This fourth and final slide demonstrates how the component handles the
@@ -151,12 +162,12 @@ pageSections:
     authorName: John Convincingname
     authorDescription: Founder
     authorImage: /src/assets/images/component-docs/profile.jpg
-    alignX: center
-    maxContentWidth: xl
-    paddingHorizontal: xl
     paddingVertical: 2xl
     colorScheme: dark
     backgroundColor: surface
+    alignX: center
+    maxContentWidth: xl
+    paddingHorizontal: xl
   - _component: page-sections/people/team-grid
     eyebrow: Our Team
     heading: Meet the people
